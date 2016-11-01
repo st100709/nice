@@ -32,7 +32,8 @@ function caller(input){
 
 
 //5
-function myDoubleConsoleLog(param1, param2){
+function myDoubleConsoleLog(args){
+  let [param1, param2] = args;
   if (typeof(param1) == 'function'){
     console.log(param1());
   }
@@ -46,10 +47,10 @@ function myDoubleConsoleLog(param1, param2){
 function caller2(param, args){
   console.log("Starting...");
   if (typeof(param) == 'function'){
-    setTimeout(param, 2000, args);
+    setTimeout(param.bind(null, args), 2000);
   }
   console.log("ending?");
   return "interesting";
 }
 
-caller2(myDoubleConsoleLog, stringReturnOne);
+caller2(myDoubleConsoleLog, [stringReturnOne, stringReturnTwo]);
