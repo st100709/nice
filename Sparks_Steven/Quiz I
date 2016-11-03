@@ -1,0 +1,26 @@
+		Quiz
+		What keyword makes a variable private (due to function scoping)?
+		 this
+		 new
+2	1	 var
+		 prototype
+		What keyword allows you to use "this" inside an object constructor?
+		 var
+		 self
+2	1	 new
+		 prototype
+		What two keywords go together?
+		 self & new
+2	1	 this & new
+		 var & this
+		 this & prototype
+		JavaScript is inherently Object Oriented
+		 True
+2	1	 False
+		JavaScript Objects (JSON) can represent anything in the world
+2		 True
+	1	 False
+		You don't NEED to use this & new to create Object Constructors in JS
+2	1	 True
+		 False
+6/6	5/6
