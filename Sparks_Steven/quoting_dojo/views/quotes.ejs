@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Here are some awesome quotes!</title>
+</head>
+<body>
+  <h1>Here are some awesome quotes!</h1>
+	<% for (x in quotes) { %>
+    	<p>"<%= quotes[x].quote %>"</p>
+    	<p>-<%= quotes[x].name %> at <%= moment(quotes[x].createdAt).format('h:mm a MMM Do YYYY') %></p>
+    	<hr>
+  	<% } %>
+
+  <a href="/">Home</a>
+</body>
+</html>
